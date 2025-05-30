@@ -1,0 +1,13 @@
+li:hover{
+    background-color: red;
+}
+
+#col1{
+    width: 50%;
+    height: 50%;
+}
+#col2{
+    padding-top: 5%;
+    justify-content: center;
+    padding-right: 5%;
+}

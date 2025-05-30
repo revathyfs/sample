@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+Doctors Page
+{% endblock %}
+
+{% block content %}
+<div class="container w-50 mt-5 p-3 border rounded shadow-lg bg-light mb-5" style="max-height: 80vh; overflow-y: auto;">
+    <h2 class="mb-3 text-primary text-center">Doctor Registration</h2>
+    <form  action="" method="post" class="d-flex flex-column h-100">
+        {% csrf_token %}
+        {{ form|crispy }}
+
+        <div class="d-grid mt-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
